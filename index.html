@@ -109,7 +109,7 @@
   --serif: 'Zen Old Mincho', 'Times New Roman', serif;
   --sans:  'Zen Kaku Gothic New', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
 
-  --measure: 60ch;
+  --measure: 68ch;
   --gutter: clamp(1.5rem, 6vw, 6rem);
   --rule: rgba(138, 148, 166, 0.16);
 }
@@ -156,7 +156,7 @@ a { color: inherit; }
 }
 
 .band {
-  padding-block: clamp(6rem, 14vw, 11rem);
+  padding-block: clamp(4.5rem, 8.5vw, 7.5rem);
   position: relative;
 }
 
@@ -275,7 +275,7 @@ a { color: inherit; }
 
 .hero__lede {
   color: var(--mist);
-  max-width: 46ch;
+  max-width: 54ch;
   font-size: clamp(1rem, 1.6vw, 1.125rem);
   line-height: 1.85;
   margin-bottom: clamp(2.5rem, 6vh, 4rem);
@@ -304,7 +304,7 @@ a { color: inherit; }
   font-size: clamp(1.75rem, 3.6vw, 2.75rem);
   line-height: 1.45;
   max-width: 20ch;
-  margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+  margin-bottom: clamp(2rem, 4vw, 2.75rem);
 }
 
 /* ─────────────────────────────────────────
@@ -319,15 +319,23 @@ a { color: inherit; }
 .section-head {
   font-size: clamp(1.5rem, 3vw, 2.125rem);
   line-height: 1.5;
-  margin-bottom: clamp(3rem, 6vw, 4.5rem);
+  margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
   max-width: 24ch;
+}
+
+.section-head--tight { margin-bottom: 1.25rem; }
+
+.section-lede {
+  color: var(--mist);
+  max-width: var(--measure);
+  margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
 }
 
 .rows { border-top: 1px solid var(--rule); }
 
 .row {
   display: grid;
-  grid-template-columns: 8.5rem 1fr;
+  grid-template-columns: 10.5rem 1fr;
   gap: clamp(1.5rem, 4vw, 3.5rem);
   padding-block: clamp(2.75rem, 5.5vw, 4rem);
   border-bottom: 1px solid var(--rule);
@@ -351,6 +359,7 @@ a { color: inherit; }
 
 .row__lead {
   font-family: var(--serif);
+  max-width: 40ch;
   font-size: clamp(1.0625rem, 1.6vw, 1.1875rem);
   line-height: 1.7;
   color: var(--ivory);
@@ -359,7 +368,7 @@ a { color: inherit; }
 
 .row__body {
   color: var(--mist);
-  max-width: 54ch;
+  max-width: 66ch;
   margin-bottom: 1.75rem;
 }
 
@@ -405,7 +414,7 @@ a { color: inherit; }
 .philosophy {
   position: relative;
   background: #0A1020;
-  padding-block: clamp(8rem, 20vw, 16rem);
+  padding-block: clamp(6rem, 13vw, 10.5rem);
   overflow: hidden;
   isolation: isolate;
 }
@@ -422,7 +431,7 @@ a { color: inherit; }
 
 .philosophy__body {
   color: rgba(240, 234, 224, 0.74);
-  max-width: 54ch;
+  max-width: 64ch;
   font-size: clamp(1rem, 1.5vw, 1.125rem);
   line-height: 2;
 }
@@ -433,7 +442,7 @@ a { color: inherit; }
   border-left: 1px solid rgba(192, 163, 94, 0.55);
   padding-left: clamp(1.25rem, 3vw, 2rem);
   margin-top: clamp(2.5rem, 5vw, 3.5rem);
-  max-width: 48ch;
+  max-width: 56ch;
   font-size: clamp(1.0625rem, 1.7vw, 1.25rem);
   line-height: 1.95;
 }
@@ -444,7 +453,7 @@ a { color: inherit; }
 
 .final {
   position: relative;
-  min-height: 88svh;
+  min-height: 80svh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -615,8 +624,8 @@ a { color: inherit; }
               listen, revisit a favorite, or simply fall asleep.
             </p>
             <p class="row__body">
-              No screen. No video. Just stories from Japan, ready to play in
-              Apple Podcasts.
+              No screen. No video. Just quiet stories from Japan, ready
+              whenever you want to rest.
             </p>
             <a class="action" href="https://podcasts.apple.com/us/podcast/japan-for-sleep-%E2%80%94-sleep-stories-from-japan/id6813183135">Explore JAPAN FOR SLEEP on Apple Podcasts</a>
           </div>
@@ -630,7 +639,12 @@ a { color: inherit; }
   <!-- ═══════════ EXPLORE JAPAN ═══════════ -->
   <section class="band explore">
     <div class="wrap">
-      <h2 class="section-head">Explore Japan.</h2>
+      <h2 class="section-head section-head--tight">Explore Japan.</h2>
+
+      <p class="section-lede">
+        Stories that move through the ideas, people, traditions, and landscapes
+        of Japan.
+      </p>
 
       <div class="worlds">
 
