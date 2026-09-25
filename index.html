@@ -316,6 +316,10 @@ a { color: inherit; }
     linear-gradient(180deg, var(--night) 0%, #0C1428 50%, var(--night) 100%);
 }
 
+/* the last row already ends with its own padding + rule,
+   so this band needs less breathing room below than above */
+.listen { padding-bottom: clamp(2.5rem, 4vw, 3.25rem); }
+
 .section-head {
   font-size: clamp(1.5rem, 3vw, 2.125rem);
   line-height: 1.5;
